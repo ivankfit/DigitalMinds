@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This company is an initiative that is aimed at providing IT services around the world.">
+    <meta name="keywords" content=" technology company, initiative, providing IT services, world">
+    <meta name="Author" content="Kfit Ivan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DigitalMinds | Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <header>
+       <div class="container">
+           <div id="branding">
+                <h1><span class="highlight">Digital</span>Minds </h1>
+           </div>
+           <nav>
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="services.html">Services</a> </li>
+                    <li   class="current"><a href="contact.html">ContactUs</a> </li>
+                </ul>
+           </nav>
+       </div>
+   </header>
+   <section id="showcase4">
+        <div class="container">
+            <h1>Meet The Team At Our Office</h1>
+        </div>
+    </section>
+<section id="newsletter">
+    <div class="container">
+        <h1> Subscribe To Our Newsletter</h1>
+        <form>
+           <input type="email" placeholder="Enter Email...">
+           <button type="submit" class="button_1">Subscribe</button> 
+        </form>
+    </div>
+</section>
+<section id="map">
+    <div class="container"></div>
+    <script>
+        function initMap(){
+            var Location = {lat: -24.90629, lng: 152.19168};
+            var map = new google.maps.Map(document.getElementById("map"),{
+                zoom: 4,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=7cAySSYeXfuO70UE1AypAPALnRnNglJ6&callback=initMap"></script>
+</section>
+
+<section id="main">
+    <div class="container">
+      <article id="main-col">
+          <h1 class="message">Leave Message</h1>
+          <form class="quote">
+              <div>
+                  <label>Name</label><br>
+                  <input type="text" placeholder="Name">
+              </div>
+              <div>
+                   <label>Email</label><br>
+                    <input type="email" placeholder="Email Address">
+               </div>
+                <div>
+                    <label>Message</label><br>
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <button class="button_1" type="submit">Send</button>
+          </form>
+          
+      </article>
+      <aside id="sidebar">
+          <div class="dark">
+          <h3>Location</h3>
+          <p>Rwebikona Mbarara </p>
+          <p>Bushenyi Road</p>
+          <p>Room No2</p>
+          <h3>Contact</h3>
+          <p>+256 705749598 / +256 777122972</p>
+          <p>tweheyoivan@gmail.com</p>
+          </div>
+      </aside>
+    </div>
+</section>
+<footer>
+    <p>DigitalMinds, Copyright &copy; 2018</p>
+</footer>
+</body>
+</html>
